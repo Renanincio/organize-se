@@ -1,0 +1,142 @@
+header{
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo img{
+    width: 75px;
+    height: 75px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 15px 85px;
+}
+
+header nav{
+    display: none;
+}
+
+header #button{
+    display: none;
+}
+
+.link{
+    text-decoration: none;
+    color: #384951;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 12px;
+    font-style: italic;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.icon{
+    margin-left: 5px;
+}
+
+@media (max-width: 720px) {
+
+    header .logo img{
+        width: 50px;
+        height: 50px;
+
+    }
+    header{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -330px;
+        width: 300px;
+        background-color: #AADBFF;
+        height: 200px;
+        border-radius: 12px;
+        z-index: 99;
+        transition: all .4s;
+    }
+
+    header nav ul{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header nav ul li{
+        padding: 12px;
+        width: 100%;
+    }
+
+    header nav ul li .link-nav{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    header nav ul hr{
+        color: #384951;
+    }
+
+    header .active{
+        margin-top: 200px;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header #button{
+        display: block;
+    }
+
+    header #button button{
+        background-color: transparent;
+        border: none;
+        color: #384951;
+    }
+
+    .icon-menu{
+        color: #384951;
+        font-size: 24px;
+    }
+
+    header ul{
+        display: none;
+    }
+}
+
+@media (max-width: 570px){
+
+    header nav{
+        width: 270px;
+    }
+
+    header nav ul li .link-nav{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px){
+    header nav{
+        height: 230px;
+    }
+
+    header nav ul li{
+        padding: 7px;
+    }
+
+}

@@ -1,0 +1,77 @@
+main{
+    background-color: white;
+    height: 83vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .form{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #AADBFF;
+    border-radius: 12px;
+    height: 70%;
+    width: 400px;
+}
+
+main form legend h1{
+    color: #384951;
+    margin: 12px;
+}
+
+main form .input{
+    color: #384951;
+    font-size: 14px;
+    font-weight: bold;
+    width: 300px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin: 12px;
+    border-bottom: #384951 solid 1px;
+}
+
+main form button{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #384951;
+    padding: 10px 15px;
+    transition: all .2s;
+    border: #384951 1px solid;
+    border-radius: 12px;
+    width: 200px;
+    margin: 12px;
+    cursor: pointer;
+}
+
+main form button:hover{
+    color: #384951;
+    border: #384951 solid 1px;
+    background-color: transparent;
+}
+
+@media (max-width:720px){
+
+    main .form{
+        width: 300px;
+    }
+
+    main form legend h1{
+        font-size: 16px;
+    }
+
+    main form .input{
+        width: 200px;
+        font-size: 12px;
+    }
+
+    main form .button{
+        padding: 8px 12px;
+    }
+  }
